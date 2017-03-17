@@ -1,0 +1,791 @@
+@charset "utf-8";
+
+
+/* FONTS */
+@font-face {
+    font-family: CaviarDreams;
+    src: url('font/caviardreams-webfont.woff2') format('woff2'),
+         url('font/caviardreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: CaviarDreams Bold;
+    src: url('font/caviardreams_bold-webfont.woff2') format('woff2'),
+         url('font/caviardreams_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: CaviarDreams BoldItalic;
+    src: url('font/caviardreams_bolditalic-webfont.woff2') format('woff2'),
+         url('font/caviardreams_bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: CaviarDreams Italic;
+    src: url('font/caviardreams_italic-webfont.woff2') format('woff2'),
+         url('font/caviardreams_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* HEADER */
+header {
+	z-index: 5;
+	position:fixed;
+	width: 100%;
+	color: black;
+	background: rgb(255,153,153); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(255,153,153,1) 0%, rgba(255,255,153,1) 20%, rgba(153,255,153,1) 40%, rgba(153,255,255,1) 60%, rgba(153,153,255,1) 80%, rgba(255,153,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,153,153,1) 0%,rgba(255,255,153,1) 20%,rgba(153,255,153,1) 40%,rgba(153,255,255,1) 60%,rgba(153,153,255,1) 80%,rgba(255,153,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(255,153,153,1) 0%,rgba(255,255,153,1) 20%,rgba(153,255,153,1) 40%,rgba(153,255,255,1) 60%,rgba(153,153,255,1) 80%,rgba(255,153,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9999', endColorstr='#ff99ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin-top: -110px;
+}
+.headerContent{
+	margin: 0 auto;
+	position: relative;
+	width: 800px;
+}
+
+ul {
+	padding: 5px;
+	margin-top: -20px;
+}
+li {
+  display: inline;
+  padding: 0 10px 0 0;
+}
+#logo {
+	float: left;
+	width: 140px;
+	margin: 0;
+	margin-top: -25px;
+	padding: 0;
+}
+#search {
+	float: right;
+	margin-top: -100px;
+	padding-right: 5px;
+}
+#search:hover{
+	cursor: pointer;
+}
+h2 {
+	font-family:"CaviarDreams Bold";
+	font-size: 2.35em;
+}
+#menu{
+	visibility: hidden;
+	positioN: absolute;
+}
+
+/* BODY */
+body {
+	margin: 0;
+	font-family: CaviarDreams;
+	background: black url("images/bastille.png");
+	background-position:bottom center;
+	background-repeat: no-repeat;
+	background-size: 1500px;
+	padding-bottom: 650px;
+}
+h1 {
+	padding: 0 0 0 60px;
+	font-family: CaviarDreams;
+	font-size: 3.3em;
+}
+a {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+	text-shadow: -2px 2px 5px #000, -2px 2px 3px #000, -2px 2px 3px #000;
+}
+p {
+	font-size: 1.9em;
+}
+.content {
+	background: url("images/boxes.png");
+	background-repeat:no-repeat;
+	background-position: top center;
+	margin-top: 100px;
+}
+.anchor{
+	display: block;
+	visibility: hidden;
+}
+#aboutMe{
+	height: 160px;
+	margin-top: -160px;
+}
+#minimal{
+	height: 100px;
+	margin-top: -100px;
+}
+#crosshatch{
+	height: 100px;
+	margin-top: -100px;
+}
+#speeddrawing{
+	height: 140px;
+	margin-top: -140px;
+}
+#contact{
+	height: 100px;
+	margin-top: -100px;
+}
+
+/* HANGING */
+.hanging {
+	background: url("images/hanging.png");
+	padding: 300px 0px;
+	background-size: auto 650px;
+	background-repeat: no-repeat;
+	position: center;
+	background-position: calc(50% - 70px) 50%;
+}
+
+/* ABOUT ME */
+.aboutMe {
+	margin: 0 auto;
+	position: relative;
+	margin-top: 40px;
+	left: 60px;
+	width: 655px;
+	text-align: center;
+	background: url("images/dom.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.aboutMeText {
+	width: 300px;
+	text-align: left;
+	padding-left: 20px;
+	padding-bottom: 16px;
+	margin-top: -17px;
+}
+
+/* MINIMAL */
+.minimal {
+	margin: 0 auto;
+	position: relative;
+	margin-top: 120px;
+	width: 570px;
+	right: 80px;
+}
+.minimal img {
+	max-width: 530px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.minimal h2 {
+	margin-top: 2px;
+	text-align: right;
+	margin-right: 12px;
+}
+
+/* CROSSHATCH */
+.crosshatch{
+	margin: 0 auto;
+	position: relative;
+	margin-top: 110px;
+	width: 477px;
+	left: 161px;
+	padding-top: 470px;
+	background: url("images/crosshatch.png");
+	background-size: 550px;
+	background-position: center;
+}
+.crosshatch h2{
+	text-align: center;
+}
+
+/* SPEEDDRAWINGS */
+.speeddrawing{
+	margin: 0 auto;
+	position: relative;
+	margin-top: 60px;
+	background: #bbb;
+	width: 650px;
+	right: 30px;
+}
+.speeddrawing video{
+	width: 650px;
+}
+.speeddrawing h2{
+	margin-top: 0;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+/* CONTACT ME */
+.contact{
+	margin: 0 auto;
+	margin-top: 130px;
+	position: relative;
+	width: 600px;
+	left:20px;
+	padding-bottom: 60px;
+}
+.contact h2{
+	text-align: right;
+}
+.contact a{
+	display: inline;
+	color: white;
+	font-size: 1.5em;
+}
+.icons a:hover{
+	color:#FFEAE3;
+}
+.icons {
+	width: 200px;
+	background: black;
+	padding: 25px 10px;
+	margin: 0;
+	margin-top: 5px;
+	float: left;
+}
+.icon {
+	height: 60px;
+	margin: 7px;
+	padding: 5px;
+}
+.form{
+	padding-left: 230px;
+}
+input{
+	padding: 9px;
+	background: white;
+	color: black;
+	margin: 5px;
+	font-family:CaviarDreams Italic;
+	font-size: 1.3em;
+	outline: none;
+	border: 1px white solid;
+	width: 180px;
+	height: 30px;
+}
+input:focus{
+	border: 1px black solid;
+}
+input[type=submit]{
+	width: 150px;
+	background: black;
+	color: white;
+	cursor: pointer;
+	height: 110px;
+	float: right;
+	font-size: 2.4em;
+}
+textarea{
+	padding: 9px;
+	background: white;
+	color: black;
+	border: 1px white solid;
+	margin: 5px;
+	font-family:CaviarDreams Italic;
+	font-size: 1.3em;
+	width: 340px;
+	height: 265px;
+	resize: none;
+	outline: none;
+}
+textarea:focus{
+	border: 1px black solid;
+}
+
+@media (max-width: 500px){
+	
+	/*HEADER*/
+	#logo{
+		width: 25vw;
+		float: left;
+		margin-top: 0;
+	}
+	h1{
+		font-size: 13vw;
+		margin-top: 10px;
+	}
+	.headerContent{
+		width: 100%;
+	}
+	.headerContent ul{
+		font-size: 5vw;
+		display: block;
+		position: relative;
+		padding-bottom: 0;
+		margin-bottom: 3vw;
+	}
+	.headerContent li{
+		padding: 3vw;
+		margin-bottom: 0;
+	}
+	#search {
+		margin-top: -22vw;
+		padding-right: 2vw;
+	}
+	
+
+	
+	
+	/*Body*/
+	body{
+		background-size: 150vw;
+		padding-bottom: 70vw;
+	}
+	.content{
+		background:none;
+	}
+	h2{
+		color: white;
+		font-size: 7vw;
+	}
+	p{
+		color: white;
+	}
+	
+	
+	#aboutMe{
+		height: 100vw;
+		margin: -70vw;
+		width: 100%;
+	}
+	#minimal{
+		height: 35vw;
+		margin-top: -35vw;
+	}
+	#crosshatch{
+		height: 35vw;
+		margin-top: -35vw;
+	}
+	#speeddrawing{
+		height: 37vw;
+		margin-top: -37vw;
+	}
+	#contact{
+		height: 32vw;
+		margin-top: -32vw;
+	}
+	
+	.content a{
+		color: #FFEAE3;
+	}
+	
+	/*HANGING*/
+	.hanging{
+		background-position: left;
+		width: 100%;
+		position: static;
+	}
+	
+	/*ABOUT ME*/
+	.aboutMe{
+		background-size: cover;
+		background-position: bottom right;
+		position: left;
+		left:0;
+		width: 100%;
+		margin-top: -150px;
+	}
+	.aboutMeText{
+		width: 50%;
+		position: left;
+		padding-left: 2vw;
+		font-size: 6vw;
+	}
+	
+	/*MINIMAL*/
+	.minimal{
+		right: 0;
+		margin: 0;
+		width: 100%
+	}
+	.minimal img{
+		width: 70vw;
+		position: center;
+	}
+	.minimal h2 {
+	text-align: right;
+	margin: 0;
+	padding-right: 2vw;
+	margin-top: -10vw;
+	}
+	
+	/* CROSSHATCH */
+	.crosshatch{
+		margin-top: -20px;
+		width: 100%;
+		left: 0;
+	}
+	/* SPEEDDRAWINGS */
+	.speeddrawing{
+		margin-top: 0px;
+		width: 100%;
+		right: 0px;
+		background: none;
+	}
+	.speeddrawing video{
+		width: 100%;
+	}
+	.speeddrawing h2{
+		margin-top: 0;
+		text-align: left;
+		padding-left: 2vw;
+	}
+	
+	/* CONTACT ME */
+	.contact{
+		margin-top: 0px;
+		width: 100%;
+		left:0px;
+		padding-bottom: 0px;
+	}
+	.contact h2{
+		padding-right: 2vw;
+	}
+	.contact a{
+		display: inline;
+		font-size: 7vw;
+		color: #FFEAE3;
+	}
+	.icons {
+		width: 90%;
+		padding: 3vw;
+		margin-top: -20px;
+	}
+	.icon {
+		height: 11vw;
+		padding: 1vw;
+		margin: 1vw;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.form{
+		padding-left: 0px;
+		width: 100%;
+	}
+	input{
+		font-size: 7vw;
+		width: 40%;
+		margin: 1vw 0vw 1vw 2vw;
+		height: 10vw;
+	}
+	input[type=submit]{
+		width: 40%;
+		height: 15vw;
+		font-size: 8vw;
+		margin: 1vw 2vw 1vw 0;
+	}
+	.form textarea{
+		padding: 4vw;
+		margin: 2vw;
+		font-size: 7vw;
+		width: 87%;
+		height: 90vw;
+	}
+}
+@media (min-width : 750px ) and (max-width : 900px ){
+	.headerContent{
+		width: 100%;
+		max-width: 700px;
+	}
+	
+	/* BODY */
+	body {
+		background-size: 900px;
+		padding-bottom: 450px;
+	}
+	h2{
+		font-size: 2em;
+	}
+	.content {
+		background-size: 800px;
+	}
+	#aboutMe{
+		height: 170px;
+		margin-top: -170px;
+	}
+	#minimal{
+		height: 100px;
+		margin-top: -100px;
+	}
+	#crosshatch{
+		height: 90px;
+		margin-top: -90px;
+	}
+	#speeddrawing{
+		height: 150px;
+		margin-top: -150px;
+	}
+	#contact{
+		height: 100px;
+		margin-top: -100px;
+	}
+	
+	/* HANGING */
+	.hanging {
+		padding: 250px 0px;
+		background-size: 550px;
+		background-position: calc(50% + 40px) 50%;
+	}
+	
+	/* ABOUT ME */
+	.aboutMe {
+		margin-top: -21px;
+		width: 500px;
+	}
+	.aboutMeText {
+		width: 300px;
+		text-align: left;
+		padding: 0px;
+		padding-bottom: 5px;
+	}
+	p{
+		font-size: 1.6em;
+	}
+	
+	/* MINIMAL */
+	.minimal {
+		margin-top: 90px;
+		width: 460px;
+		right: 65px;
+	}
+	.minimal img {
+		max-width: 440px;
+		margin-bottom: 15px;
+	}
+	.minimal h2 {
+		margin-top: 0px;
+		text-align: right;
+		margin-right: 12px;
+	}
+	
+	/* CROSSHATCH */
+	.crosshatch{
+		margin-top: 95px;
+		width: 381px;
+		left: 129px;
+		padding-top: 333px;
+	}
+	
+	/* SPEEDDRAWINGS */
+	.speeddrawing{
+		width: 550px;
+		margin-top: 20px;
+	}
+	.speeddrawing video{
+		width: 550px;
+	}
+	
+	
+	/* CONTACT ME */
+	.contact{
+		margin-top: 100px;
+		width: 500px;
+	}
+	.contact a{
+		font-size: 1.4em;
+	}
+	.icons {
+		width: 180px;
+		padding: 20px 10px;
+		margin-top: 0px;
+		float: left;
+	}
+	.icon {
+		height: 50px;
+		margin: 3px;
+		padding: 5px;
+	}
+	.form{
+		padding-left: 210px;
+	}
+	input{
+		padding: 8px;
+		margin: 4px;
+		width: 150px;
+		height: 27px;
+	}
+	input[type=submit]{
+		width: 105px;
+		height: 99px;
+		float: right;
+		font-size: 2.1em;
+	}
+	textarea{
+		width: 260px;
+		height: 193px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 750px){
+	header{
+		margin-top: -60px;
+	}
+	.headerContent{
+		max-width: 500px;
+	}
+	#logo{
+		width: 50px;
+		margin-top: 0px;
+	}
+	#search {
+		width: 25px;
+		margin-top: -50px;
+		padding-right: 5px;
+	}
+	
+	/* BODY */
+	body {
+		background-size: 750px;
+		padding-bottom: 300px;
+		margin-top: -40px;
+	}
+	ul{
+		padding-bottom: 0;
+		margin-bottom: 5px;
+	}
+	li{
+		font-size: 1em;
+		margin: 1px;
+	}
+	h1 {
+		font-size: 2.2em;
+		margin-top: 0px;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	.content {
+		background-size: 600px;
+	}
+	#aboutMe{
+		height: 90px;
+		margin-top: -90px;
+	}
+	#minimal{
+		height: 40px;
+		margin-top: -40px;
+	}
+	#crosshatch{
+		height: 30px;
+		margin-top: -30px;
+	}
+	#speeddrawing{
+		height: 70px;
+		margin-top: -70px;
+	}
+	#contact{
+		height: 50px;
+		margin-top: -50px;
+	}
+	
+	/* HANGING */
+	.hanging {
+		padding: 190px 0px;
+		background-size: 450px;
+		background-position: calc(50% + 40px) 50%;
+	}
+	
+	/* ABOUT ME */
+	.aboutMe {
+		margin-top: -16px;
+		width: 390px;
+		left: 37px;
+		background-size: 300px;
+		padding-top: 1px;
+	}
+	.aboutMeText {
+		width: 280px;
+		padding: 1px;
+		padding-bottom: 5px;
+	}
+	p{
+		font-size: 1.4em;
+	}
+	
+	/* MINIMAL */
+	.minimal {
+		margin-top: 59px;
+		width: 340px;
+		right: 48px;
+	}
+	.minimal img {
+		max-width: 320px;
+		margin-bottom: 15px;
+	}
+	
+	/* CROSSHATCH */
+	.crosshatch{
+		margin-top: 80px;
+		width: 285px;
+		left: 96px;
+		padding-top: 248px;
+		background-size: 460px;
+	}
+	
+	/* SPEEDDRAWINGS */
+	.speeddrawing{
+		width: 400px;
+		margin-top: 20px;
+	}
+	.speeddrawing video{
+		width: 400px;
+	}
+	
+	
+	/* CONTACT ME */
+	.contact{
+		margin-top: 80px;
+		width: 390px;
+		left: 17px;
+	}
+	.contact a{
+		font-size: 1.3em;
+	}
+	.icons {
+		width: 160px;
+		padding: 10px 9px;
+		margin-top: -15px;
+	}
+	.icon {
+		height: 40px;
+		margin: 3px;
+		padding: 5px;
+	}
+	.form{
+		padding-left: 185px;
+		margin-top: -15px;
+	}
+	input{
+		padding: 5px;
+		margin: 3px;
+		width: 100px;
+		height: 20px;
+	}
+	input[type=submit]{
+		width: 80px;
+		height: 70px;
+		float: right;
+		font-size: 1.5em;
+		margin-top: -15px;
+	}
+	textarea{
+		width: 187px;
+		height: 169px;
+		margin: 3px;
+		padding: 5px;
+	}
+}
